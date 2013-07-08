@@ -1,4 +1,5 @@
 public class Item {
+
 	// id товара из БД
 	private Integer id_item;
 
@@ -10,19 +11,31 @@ public class Item {
 	// Категория товара
 	private String category_item;
 
-	public Integer Get_id() {
+
+	public Item(Integer id, String name, Integer price, String category) {
+		id_item = id;
+		name_item = name;
+		info_item = null;
+		price_item = price;
+		category_item = category;
+	}
+
+	public Integer get_id() {
 		return id_item;
 	}
-	public String Get_name() {
+	public String get_name() {
 		return name_item;
 	}
-	public String Get_info() {
+	public String get_info() {
 		return info_item;
 	}
-	public Integer Get_price() {
+	public Integer get_price() {
 		return price_item;
 	}
-	public String Get_category() {
+	public String get_category() {
 		return category_item;
+	}
+	public void set_info(String info) {
+		info_item = info;
 	}
 }
