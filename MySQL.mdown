@@ -1,0 +1,16 @@
+MySQL
+
+CREATE USER 'User1'@'%' IDENTIFIED BY 'MAF6cvoAxyy4fM';
+GRANT ALL PRIVILEGES ON *.* TO 'User1'@'%' WITH GRANT OPTION;
+
+CREATE USER 'User3'@'%' IDENTIFIED BY 'wbJJm49R';
+GRANT ALL PRIVILEGES ON *.* TO 'User3'@'%' WITH GRANT OPTION;
+
+// Для Кати
+mysql --host=192.81.213.113 --user=User1 --password=MAF6cvoAxyy4fM
+
+// Для покупателя
+mysql --host=192.81.213.113 --user=User3 --password=wbJJm49R
+
+// Для root
+mysql --host=127.0.0.1 --user=root --password=Ah6wQzRk9bxWFn
